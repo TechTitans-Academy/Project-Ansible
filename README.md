@@ -20,6 +20,6 @@ Ansible project that will install the docker pacakge and run the TechTitans Dinn
             └── main.yml
 ```
 
-### How to Run.
+### How to Run:
 
 `#ansible-playbook -i inventory.ini playbook.yml`
