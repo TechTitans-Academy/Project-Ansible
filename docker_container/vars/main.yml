@@ -1,0 +1,5 @@
+---
+docker_image: "techtitansacademy/dinnerapp"
+container_name: "dinner"
+container_port: 8080
+host_port: 8085
