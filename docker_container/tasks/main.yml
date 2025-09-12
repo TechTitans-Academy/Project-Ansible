@@ -1,0 +1,14 @@
+---
+- name: Pull the Docker image
+  community.docker.docker_image:
+    name: "{{ docker_image }}"
+    source: pull
+
+- name: Run container from image
+  community.docker.docker_container:
+    name: "{{ container_name }}"
+    image: "{{ docker_image }}"
+    published_ports:
+      - "{{ host_port }}:{{ container_port }}"
+    restart_policy: always
+    state: started
