@@ -1,0 +1,9 @@
+---
+- name: Install Docker and run container
+  hosts: all
+  become: yes
+  roles:
+    - docker
+    - docker_container
+
+# ansible-playbook -i inventory.yml playbook.yml-e "docker_image=redis:latest container_name=my_redis host_port=6379 container_port=6379"
