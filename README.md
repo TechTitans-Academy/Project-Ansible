@@ -1,4 +1,4 @@
-# Ansible Small Project
+# Ansible Project
 
 Ansible project that will install the docker pacakge and run the TechTitans Dinner Application. We are creating two roles `docker` and `docker_container`.
 
