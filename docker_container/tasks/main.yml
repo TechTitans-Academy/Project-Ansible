@@ -1,9 +1,11 @@
 ---
+# Creating a docker image from the docker.hub.
 - name: Pull the Docker image
   community.docker.docker_image:
     name: "{{ docker_image }}"
     source: pull
 
+# Running the conatiner from the image we pulled in above step.
 - name: Run container from image
   community.docker.docker_container:
     name: "{{ container_name }}"
